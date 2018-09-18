@@ -3,6 +3,8 @@ A handy Linux tool to login to network devices and download their configuration 
 
 Use this simple setup to automatically login to a Cisco network device (from a Linux box) and download its configuration to a TFTP server. Your Cisco device should be SSH enabled, but this can also work with telnet. See ‘telnet example.txt’
 
+This is tested on a Cisco 3500 series switch using SSH, and telnet to a Ubuiqity switch. 
+
 Setting it up:
 
 First, install a TFTP server somewhere.
