@@ -1,5 +1,5 @@
 # Cisco_Config_Backup
-A handy Linux tool to login to network devices and download their configuration using TFTP.
+A handy Linux solution to login to network devices and download their configuration using TFTP.
 
 Use this simple setup to automatically login to a Cisco network device (from a Linux box) and download its configuration to a TFTP server. Your Cisco device should be SSH enabled, but this can also work with telnet. See ‘telnet example.txt’
 
