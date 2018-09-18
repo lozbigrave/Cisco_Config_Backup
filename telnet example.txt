@@ -1,0 +1,55 @@
+#!/usr/bin/expect -f
+
+# Septempber 2018 Loz Bigrave
+
+# Set Variables
+set username ubnt_admin
+set hostname 10.0.2.1
+set password ubntpass
+set command "copy nvram:startup-config tftp://123.0.0.30/SW1-confg"
+set timeout 5
+
+log_file -a /root/TFTP/debug_autobackup_sw1.log
+
+# no need to change anything below here
+
+match_max 100000
+
+# Start the session
+
+spawn telnet $hostname
+
+expect "Connected to 10.0.2.1."
+expect "Escape character is '^]'."
+expect "User:"
+
+send  "$username\r"
+
+expect "*?assword:*"
+
+send  "$password\r"
+
+expect "(UBNT EdgeSwitch) >"
+
+send  "enable\r"
+
+expect "(UBNT EdgeSwitch) #"
+
+send  "$command\r"
+
+expect "Mode........................................... TFTP"
+expect "Set Server IP.................................. 10.0.0.30"
+expect "Path........................................... ./"
+expect "Filename....................................... SW1-confg"
+expect "Data Type...................................... Text Configuration"
+expect "Management access will be blocked for the duration of the transfer"
+expect "Are you sure you want to start? (y/n)"
+
+send  "y\r"
+
+expect "File transfer operation completed successfully."
+expect "(UBNT EdgeSwitch) #"
+
+send "exit\r"
+send "quit\r"
+

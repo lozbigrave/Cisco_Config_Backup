@@ -1,0 +1,7 @@
+
+
+
+username backup password dfkjdsfjdfs
+
+privilege exec level 1 copy startup-config
+privilege exec level 1 copy
