@@ -1,7 +1,7 @@
 
 #Add these lines to allow remote login to your device using the 'backup' account, and to permit the running of the copy command. 
 
-# The credentials should match the variables within 
+# The credentials should match the variables within 'cisco_autobackup.sh'
 
 username backup password dfkjdsfjdfs
 
