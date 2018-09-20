@@ -20,7 +20,8 @@ You should only need to change these variables:
 set username 
 set hostname 
 set password 
-set tftpserver 
+set tftpserver
+plus the expected hostame of your switch. 
 
 And finally:
 
