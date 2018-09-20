@@ -21,7 +21,7 @@ set username,
 set hostname, 
 set password, 
 set tftpserver,
-plus the expected hostame of your switch. 
+plus the expected hostname of your switch. 
 
 And finally:
 
