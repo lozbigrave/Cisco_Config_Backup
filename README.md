@@ -29,6 +29,6 @@ Run the shell script manually, or...
 
 Automate it to run at 5 past midnight (optional) within crontab
 
-5 0 * * * /root/TFTP/cisco_autobackup.sh >/dev/null 2>&1
+5 0 * * * /root/cisco_autobackup.sh >/dev/null 2>&1
 
 
