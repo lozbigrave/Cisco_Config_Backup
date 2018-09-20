@@ -11,7 +11,7 @@ set timeout 5
 
 log_file -a /root/TFTP/debug_autobackup_sw1.log
 
-# no need to change anything below here
+# no need to change anything below here, except the expected switch hostname. 
 
 match_max 100000
 
