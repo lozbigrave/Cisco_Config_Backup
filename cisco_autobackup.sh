@@ -10,7 +10,7 @@ set tftpserver 10.0.0.30
 set command "copy startup-config tftp://$tftpserver"
 set timeout 5
 
-log_file -a /root/TFTP/debug_autobackup.log
+log_file -a /root/debug_autobackup.log
 
 # no need to change anything after here, except your switch hostname.
  
