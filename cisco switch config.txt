@@ -1,5 +1,5 @@
 
-
+#Add these lines to allow remote login to your device using the 'backup' account, and to permit the running of the copy command. 
 
 username backup password dfkjdsfjdfs
 
