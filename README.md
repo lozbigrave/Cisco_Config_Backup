@@ -17,10 +17,10 @@ Set your Cisco device IP and other variables in the shell script ‘cisco_autoba
 
 You should only need to change these variables:
 
-set username 
-set hostname 
-set password 
-set tftpserver
+set username, 
+set hostname, 
+set password, 
+set tftpserver,
 plus the expected hostame of your switch. 
 
 And finally:
